@@ -18,3 +18,5 @@ The block Koers_is sets the current heading to a specific value. This block is u
 Blocks to stop when a black line is observed, or when one of the other motors detects a change in output angle, are included as well. They stop the loop 'rijden' that is used by Rij_koers (and Rij_bocht). 
 
 The block Langzaam_rijden can be used to set a slow acceleration value to gradually change start or stopping speed.
+
+The file PolyGroup_Icons.zip can be unzipped into C:\Program Files (x86)\LEGO Software\LEGO MINDSTORMS ??? EV3\Resources\MyBlocks\images to get meaningfull distinctive icons for the blocks in this library.
