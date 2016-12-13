@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<EditorDefinitions>
+  <PolyGroups>
+    <PolyGroup BlockFamily="My" IconBaseName="PolyGroup_056_Timer">
+      <Block>
+        <Mode>MyBlock</Mode>
+        <Description>Trek langzaam op en rem langzaam af. De minimale snelheid is relatief (1=normale snelheid), en de afstand voor optrekken en afremmen ook (1=hele traject).</Description>
+        <Reference Type="VILib" />
+        <PaletteInfo Weight="0.5" />
+        <ParamInfo Name="minimale_relatieve_snelheid" DisplayName="minimale_relatieve_snelheid" Direction="Input" Identification="Identification_201_Speed_Plus25.png" DataType="Single" DefaultValue="0.05" />
+        <ParamInfo Name="optrekken_relatieve_afstand" DisplayName="optrekken_relatieve_afstand" Direction="Input" Identification="Identification_413_Threshold_Less_-1.png" DataType="Single" DefaultValue="0.5" />
+        <ParamInfo Name="afremmen_relatieve_afstand" DisplayName="afremmen_relatieve_afstand" Direction="Input" Identification="Identification_406_Threshold_Greater_+1.png" DataType="Single" DefaultValue="0.5" />
+      </Block>
+    </PolyGroup>
+  </PolyGroups>
+</EditorDefinitions>

@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<EditorDefinitions>
+  <PolyGroups>
+    <PolyGroup BlockFamily="My" IconBaseName="PolyGroup_110_Limiter">
+      <Block>
+        <Mode>MyBlock</Mode>
+        <Description>Limits the input A between minus C and plus C, with zero-crossing at B.</Description>
+        <Reference Type="VILib" />
+        <PaletteInfo Weight="0.5" />
+        <ParamInfo Name="input" DisplayName="input" Direction="Input" Identification="Identification_020_x.png" DataType="Single" DefaultValue="0" />
+        <ParamInfo Name="center" DisplayName="center" Direction="Input" Identification="Identification_220_Steering_Straight_Forward.png" DataType="Single" DefaultValue="0" />
+        <ParamInfo Name="limit" DisplayName="limit" Direction="Input" Identification="Identification_029_Height.png" DataType="Single" DefaultValue="0" />
+        <ParamInfo Name="output" DisplayName="output" Direction="Output" Identification="Identification_021_y.png" DataType="Single" />
+        <ParamInfo Name="abs(output)" DisplayName="abs(output)" Direction="Output" Identification="Identification_027_yRow.png" DataType="Single" />
+      </Block>
+    </PolyGroup>
+  </PolyGroups>
+</EditorDefinitions>

@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<EditorDefinitions>
+  <PolyGroups>
+    <PolyGroup BlockFamily="My" IconBaseName="PolyGroup_103_Bocht">
+      <Block>
+        <Mode>MyBlock</Mode>
+        <Description>Rij een bocht met gegeven booglengte en straal, booglengte en hoek, of hoek en straal.</Description>
+        <Reference Type="VILib" />
+        <PaletteInfo Weight="0.5" />
+        <ParamInfo Name="booglengte" DisplayName="booglengte" Direction="Input" Identification="Identification_029_Height.png" DataType="Single" DefaultValue="0" />
+        <ParamInfo Name="straal" DisplayName="straal" Direction="Input" Identification="Identification_054_OutputDistance.png" DataType="Single" DefaultValue="0" />
+        <ParamInfo Name="hoek" DisplayName="hoek" Direction="Input" Identification="Identification_282_DegreesAngle_Plus90.png" DataType="Single" DefaultValue="0" />
+        <ParamInfo Name="stop" DisplayName="stop" Direction="Input" Identification="Identification_508_BrakeAtEnd_Brake.png" DataType="Boolean" DefaultValue="False" />
+        <ParamInfo Name="corrigeer" DisplayName="corrigeer" Direction="Input" Identification="Identification_511_PlayType_Repeat.png" DataType="Boolean" DefaultValue="False" />
+        <ParamInfo Name="hoek1" DisplayName="hoek" Direction="Output" Identification="Identification_290_DegreesAngle_Minus90.png" DataType="Single" />
+        <ParamInfo Name="succes" DisplayName="succes" Direction="Output" Identification="Identification_009_OutputBoolean.png" DataType="Boolean" />
+      </Block>
+    </PolyGroup>
+  </PolyGroups>
+</EditorDefinitions>

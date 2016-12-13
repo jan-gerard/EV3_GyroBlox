@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<EditorDefinitions>
+  <PolyGroups>
+    <PolyGroup BlockFamily="My" IconBaseName="PolyGroup_102_RijKoers">
+      <Block>
+        <Mode>MyBlock</Mode>
+        <Description>Rij een koers en een afstand, en ontwijk eventueel obstakels. Te onderbreken door de "rijden"-loop af te breken. Aan het eind wordt de "stop"-loop afgebroken.</Description>
+        <Reference Type="VILib" />
+        <PaletteInfo Weight="0.5" />
+        <ParamInfo Name="koers" DisplayName="koers" Direction="Input" Identification="Identification_504_Radius.png" DataType="Single" DefaultValue="0" />
+        <ParamInfo Name="afstand" DisplayName="afstand" Direction="Input" Identification="Identification_052_DistanceCM.png" DataType="Single" DefaultValue="0" />
+        <ParamInfo Name="zet op koers" DisplayName="zet op koers" Direction="Input" Identification="Identification_505_Until.png" DataType="Boolean" DefaultValue="True" />
+        <ParamInfo Name="stop" DisplayName="stop" Direction="Input" Identification="Identification_508_BrakeAtEnd_Brake.png" DataType="Boolean" DefaultValue="False" />
+        <ParamInfo Name="geregeld" DisplayName="geregeld" Direction="Input" Identification="Identification_511_PlayType_Repeat.png" DataType="Boolean" DefaultValue="False" />
+        <ParamInfo Name="ontwijk" DisplayName="ontwijk" Direction="Input" Identification="Identification_513_OutputHeading.png" DataType="Single" DefaultValue="30" />
+        <ParamInfo Name="gelukt" DisplayName="gelukt" Direction="Output" Identification="Identification_512_PlayType_WaitForCompletion.png" DataType="Boolean" />
+      </Block>
+    </PolyGroup>
+  </PolyGroups>
+</EditorDefinitions>

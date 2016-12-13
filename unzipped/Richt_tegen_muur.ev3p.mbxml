@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<EditorDefinitions>
+  <PolyGroups>
+    <PolyGroup BlockFamily="My" IconBaseName="Polygroup_041_Interrupt">
+      <Block>
+        <Mode>MyBlock</Mode>
+        <Description>Rij tegen een muur en zet de robot recht.</Description>
+        <Reference Type="VILib" />
+        <PaletteInfo Weight="0.5" />
+        <ParamInfo Name="Vooruit" DisplayName="Vooruit" Direction="Input" Identification="Identification_220_Steering_Straight_Forward.png" DataType="Boolean" DefaultValue="False" />
+        <ParamInfo Name="Koers" DisplayName="Koers" Direction="Input" Identification="Identification_504_Radius.png" DataType="Single" DefaultValue="0" />
+        <ParamInfo Name="Tijd" DisplayName="Tijd" Direction="Input" Identification="Identification_240_Time.png" DataType="Single" DefaultValue="0.2" />
+      </Block>
+    </PolyGroup>
+  </PolyGroups>
+</EditorDefinitions>

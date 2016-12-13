@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<EditorDefinitions>
+  <PolyGroups>
+    <PolyGroup BlockFamily="My" IconBaseName="PolyGroup_052_Gyro">
+      <Block>
+        <Mode>MyBlock</Mode>
+        <Description>Meet koers en bereken correctie</Description>
+        <Reference Type="VILib" />
+        <PaletteInfo Weight="0.5" />
+        <ParamInfo Name="koers" DisplayName="koers" Direction="Input" Identification="Identification_504_Radius.png" DataType="Single" DefaultValue="0" Configuration="SliderHorizontal.custom" MinValue="-360" MaxValue="360" />
+        <ParamInfo Name="marge" DisplayName="marge" Direction="Input" Identification="Identification_513_OutputHeading.png" DataType="Single" DefaultValue="15" />
+        <ParamInfo Name="afwijking" DisplayName="afwijking" Direction="Output" Identification="Identification_279_OutputNumberDegrees.png" DataType="Single" />
+        <ParamInfo Name="buiten marge" DisplayName="buiten marge" Direction="Output" Identification="Identification_041_Length.png" DataType="Boolean" />
+        <ParamInfo Name="correctie richting" DisplayName="correctie richting" Direction="Output" Identification="Identification_506_Invert_0.png" DataType="Single" />
+      </Block>
+    </PolyGroup>
+  </PolyGroups>
+</EditorDefinitions>
