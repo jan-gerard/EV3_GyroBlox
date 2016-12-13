@@ -20,3 +20,6 @@ Blocks to stop when a black line is observed, or when one of the other motors de
 The block Langzaam_rijden can be used to set a slow acceleration value to gradually change start or stopping speed.
 
 The file PolyGroup_Icons.zip can be unzipped into C:\Program Files (x86)\LEGO Software\LEGO MINDSTORMS ??? EV3\Resources\MyBlocks\images to get meaningfull distinctive icons for the blocks in this library.
+
+The contents of the Unzipped folder is as good as possible in sync with the GyroBlox.ev3s file. In fact, GyroBlox.ev3s is a zip file with modified extension, containing xml-files that contain the actual EV3 model. They can be edited and put back into the GyroBlox.ev3s, or GyroBlox.ev3s can be edited with the LEGO Mindstorms software, and its contents unzipped to the unzipped folder. 
+I would like to find a way to have GITHUB handle the zipping/unzipping automatically. You could download the 'unzipped' folder from GITHUB as zip file, and rename the extension to 3v3s.
