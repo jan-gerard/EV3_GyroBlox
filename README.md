@@ -11,7 +11,7 @@ The block Rij_koers drives a distance (optionally after setting the correct head
 
 The block Rij_bocht drives a circle section. You can enter distance and radius, distance and angle, or radius an angle. This block can optionally use the gyro-sensor. This block uses Rij_koers to follow the momentary heading of the curve.
 
-The block Richt_tegen_muur aligns the robot with a wall. You can enter the known heading to align the gyro-based compass.
+The block Richt_tegen_muur aligns the robot with a wall. You can enter the known heading to align the gyro-based compass. ![richt_tegen_muur](https://github.com/jan-gerard/EV3_GyroBlox/blob/master/images/richt_tegen_muur.png)
 
 The block Koers_is sets the current heading to a specific value. This block is used by Richt_tegen_muur.
 
