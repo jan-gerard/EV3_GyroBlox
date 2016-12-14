@@ -898,6 +898,50 @@
                     <Terminal Id="SequenceOut" Direction="Output" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="1 0.5" Bounds="0 0 0 0" />
                 </PairedConfigurableMethodCall>
                 <Wire Id="w90" Joints="N(n79:SequenceOut) N(n25:SequenceIn)" />
+                <ConfigurableMethodCall Id="n66" Bounds="746 -28 159 91" Target="CommentBlock\.vix" Comment="Rijd in een bocht. Eventueel geregeld.">
+                    <Terminal Id="SequenceIn" Direction="Input" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="0 0.5" Bounds="0 33 18 18" />
+                    <Terminal Id="SequenceOut" Direction="Output" Wire="w96" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="1 0.5" Bounds="141 33 18 18" />
+                </ConfigurableMethodCall>
+                <ConfigurableMethodCall Id="n84" Bounds="905 -28 159 91" Target="CommentBlock\.vix" Comment="In: &#xD;1) afstand over cirkelboog (cm)">
+                    <Terminal Id="SequenceIn" Direction="Input" Wire="w96" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="0 0.5" Bounds="0 33 18 18" />
+                    <Terminal Id="SequenceOut" Direction="Output" Wire="w91" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="1 0.5" Bounds="141 33 18 18" />
+                </ConfigurableMethodCall>
+                <ConfigurableMethodCall Id="n86" Bounds="1064 -28 159 91" Target="CommentBlock\.vix" Comment="2) straal van de cirkelboog (cm)&#xD;">
+                    <Terminal Id="SequenceIn" Direction="Input" Wire="w91" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="0 0.5" Bounds="0 33 18 18" />
+                    <Terminal Id="SequenceOut" Direction="Output" Wire="w92" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="1 0.5" Bounds="141 33 18 18" />
+                </ConfigurableMethodCall>
+                <Wire Id="w91" Joints="N(n84:SequenceOut) N(n86:SequenceIn)" />
+                <ConfigurableMethodCall Id="n88" Bounds="1223 -28 159 91" Target="CommentBlock\.vix" Comment="3) hoek over cirkelboog (graden)">
+                    <Terminal Id="SequenceIn" Direction="Input" Wire="w92" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="0 0.5" Bounds="0 33 18 18" />
+                    <Terminal Id="SequenceOut" Direction="Output" Wire="w93" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="1 0.5" Bounds="141 33 18 18" />
+                </ConfigurableMethodCall>
+                <Wire Id="w92" Joints="N(n86:SequenceOut) N(n88:SequenceIn)" />
+                <ConfigurableMethodCall Id="n90" Bounds="1382 -28 159 91" Target="CommentBlock\.vix" Comment="Twee van de drie 1) t/m 3) moeten een waarde...">
+                    <Terminal Id="SequenceIn" Direction="Input" Wire="w93" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="0 0.5" Bounds="0 33 18 18" />
+                    <Terminal Id="SequenceOut" Direction="Output" Wire="w94" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="1 0.5" Bounds="141 33 18 18" />
+                </ConfigurableMethodCall>
+                <Wire Id="w93" Joints="N(n88:SequenceOut) N(n90:SequenceIn)" />
+                <ConfigurableMethodCall Id="n92" Bounds="1541 -28 159 91" Target="CommentBlock\.vix" Comment="...hebben en de derde ingang moet 0 zijn. ">
+                    <Terminal Id="SequenceIn" Direction="Input" Wire="w94" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="0 0.5" Bounds="0 33 18 18" />
+                    <Terminal Id="SequenceOut" Direction="Output" Wire="w95" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="1 0.5" Bounds="141 33 18 18" />
+                </ConfigurableMethodCall>
+                <Wire Id="w94" Joints="N(n90:SequenceOut) N(n92:SequenceIn)" />
+                <ConfigurableMethodCall Id="n94" Bounds="1700 -28 159 91" Target="CommentBlock\.vix" Comment="4) stop na afloop&#xD;5) gebruik feed-back regelaar">
+                    <Terminal Id="SequenceIn" Direction="Input" Wire="w95" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="0 0.5" Bounds="0 33 18 18" />
+                    <Terminal Id="SequenceOut" Direction="Output" Wire="w99" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="1 0.5" Bounds="141 33 18 18" />
+                </ConfigurableMethodCall>
+                <Wire Id="w95" Joints="N(n92:SequenceOut) N(n94:SequenceIn)" />
+                <ConfigurableMethodCall Id="n98" Bounds="1859 -28 159 91" Target="CommentBlock\.vix" Comment="Uit:&#xD;1) berekende hoek van cirkel-">
+                    <Terminal Id="SequenceIn" Direction="Input" Wire="w99" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="0 0.5" Bounds="0 33 18 18" />
+                    <Terminal Id="SequenceOut" Direction="Output" Wire="w101" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="1 0.5" Bounds="141 33 18 18" />
+                </ConfigurableMethodCall>
+                <Wire Id="w99" Joints="N(n94:SequenceOut) N(n98:SequenceIn)" />
+                <ConfigurableMethodCall Id="n100" Bounds="2018 -28 159 91" Target="CommentBlock\.vix" Comment="...boog (graden)&#xD;2) of het gelukt is">
+                    <Terminal Id="SequenceIn" Direction="Input" Wire="w101" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="0 0.5" Bounds="0 33 18 18" />
+                    <Terminal Id="SequenceOut" Direction="Output" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="1 0.5" Bounds="141 33 18 18" />
+                </ConfigurableMethodCall>
+                <Wire Id="w101" Joints="N(n98:SequenceOut) N(n100:SequenceIn)" />
+                <Wire Id="w96" Joints="N(n66:SequenceOut) N(n84:SequenceIn)" />
             </BlockDiagram>
             <Icon>
                 <Model0:IconPanel xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:Model0="clr-namespace:NationalInstruments.LabVIEW.VI.Design;assembly=NationalInstruments.LabVIEW.VI.SourceModel" xmlns:fpruntime="clr-namespace:NationalInstruments.LabVIEW.FrontPanelRuntime;assembly=NationalInstruments.LabVIEW.FrontPanelRuntime" xmlns:ation="http://schemas.microsoft.com/winfx/2006/xaml/presentation" Height="98" Width="56">

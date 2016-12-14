@@ -82,7 +82,7 @@
                 <Comment Bounds="380 -95 87 80" SizeMode="User" AttachStyle="Free">
                     <Content>max draai-snelheid</Content>
                 </Comment>
-                <ConfigurableMethodCall Id="n10" Bounds="1789 0 132 91" Target="GyroRate\.vix">
+                <ConfigurableMethodCall Id="n10" Bounds="1890 0 132 91" Target="GyroRate\.vix">
                     <ConfigurableMethodTerminal ConfiguredValue="1.Wired_1FAC2752-7229-46A0-AA06-E0731CAB9CAF">
                         <Terminal Id="Port" Direction="Input" Wire="w18" DataType="Single" Hotspot="0.5 1" Bounds="54 56 30 27" />
                     </ConfigurableMethodTerminal>
@@ -92,7 +92,7 @@
                     <Terminal Id="SequenceIn" Direction="Input" Wire="w17" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="0 0.5" Bounds="0 33 18 18" />
                     <Terminal Id="SequenceOut" Direction="Output" Wire="w38" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="1 0.5" Bounds="114 33 18 18" />
                 </ConfigurableMethodCall>
-                <ConfigurableMethodCall Id="n12" Bounds="2022 0 132 91" Target="GyroDegrees\.vix">
+                <ConfigurableMethodCall Id="n12" Bounds="2123 0 132 91" Target="GyroDegrees\.vix">
                     <ConfigurableMethodTerminal ConfiguredValue="1.Wired_1FAC2752-7229-46A0-AA06-E0731CAB9CAF">
                         <Terminal Id="Port" Direction="Input" Wire="w18" DataType="Single" Hotspot="0.5 1" Bounds="54 56 30 27" />
                     </ConfigurableMethodTerminal>
@@ -116,7 +116,7 @@
                     <Terminal Id="SequenceOut" Direction="Output" Wire="w15" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="1 0.5" Bounds="83 33 18 18" />
                 </ConfigurableMethodCall>
                 <Wire Id="w11" Joints="N(n8:SequenceOut) N(n38:SequenceIn)" />
-                <ConfigurableMethodCall Id="n16" Bounds="1688 0 101 91" Target="X3\.Lib:GlobalGetSingle">
+                <ConfigurableMethodCall Id="n16" Bounds="1789 0 101 91" Target="X3\.Lib:GlobalGetSingle">
                     <ConfigurableMethodTerminal>
                         <Terminal Id="valueOut" Direction="Output" Wire="w18" DataType="Single" Hotspot="0.5 1" Bounds="54 56 30 27" />
                     </ConfigurableMethodTerminal>
@@ -126,16 +126,16 @@
                     <Terminal Id="SequenceIn" Direction="Input" Wire="w62" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="0 0.5" Bounds="0 33 18 18" />
                     <Terminal Id="SequenceOut" Direction="Output" Wire="w17" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="1 0.5" Bounds="83 33 18 18" />
                 </ConfigurableMethodCall>
-                <Wire Id="w18" Joints="N(n16:valueOut) v(38) h(466) N(n40:Port) B(0) v(30) h(334) N(n12:Port) B(0) v(22) h(101) N(n10:Port)" />
+                <Wire Id="w18" Joints="N(n16:valueOut) v(22) h(101) N(n10:Port) B(0) v(30) h(334) N(n12:Port) B(0) v(38) h(466) N(n40:Port)" />
                 <Wire Id="w17" Joints="N(n16:SequenceOut) N(n10:SequenceIn)" />
-                <Comment Bounds="706 -101 87 80" SizeMode="User" AttachStyle="Free">
+                <Comment Bounds="690 -103 87 80" SizeMode="User" AttachStyle="Free">
                     <Content>gyroscoop aansluiting</Content>
                 </Comment>
-                <ConfigurableMethodCall Id="n24" Bounds="1253 0 101 91" Target="X3\.Lib:GlobalSetSingle">
+                <ConfigurableMethodCall Id="n24" Bounds="1354 0 101 91" Target="X3\.Lib:GlobalSetSingle">
                     <ConfigurableMethodTerminal ConfiguredValue="terugtrek afstand">
                         <Terminal Id="name" Direction="Input" DataType="String" Hotspot="0.5 1" Bounds="0 0 0 0" />
                     </ConfigurableMethodTerminal>
-                    <ConfigurableMethodTerminal ConfiguredValue="10">
+                    <ConfigurableMethodTerminal ConfiguredValue="7">
                         <Terminal Id="valueIn" Direction="Input" DataType="Single" Hotspot="0.5 1" Bounds="54 56 30 27" />
                     </ConfigurableMethodTerminal>
                     <ConfigurableMethodTerminal ConfiguredValue="0">
@@ -145,15 +145,15 @@
                     <Terminal Id="SequenceOut" Direction="Output" Wire="w22" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="1 0.5" Bounds="83 33 18 18" />
                 </ConfigurableMethodCall>
                 <Wire Id="w15" Joints="N(n14:SequenceOut) N(n41:SequenceIn)" />
-                <Comment Bounds="1256 -99 87 80" SizeMode="User" AttachStyle="Free">
+                <Comment Bounds="1362 -103 87 80" SizeMode="User" AttachStyle="Free">
                     <Content>bij botsing achteruit 
 (in cm)</Content>
                 </Comment>
                 <Wire Id="w22" Joints="N(n24:SequenceOut) N(n34:SequenceIn)" />
-                <Comment Bounds="2416 -91 87 80" SizeMode="User" AttachStyle="Free">
+                <Comment Bounds="2494 -95 87 80" SizeMode="User" AttachStyle="Free">
                     <Content>wacht tot hoek is 0 en niet NaN</Content>
                 </Comment>
-                <ConfigurableMethodCall Id="n23" Bounds="1556 0 132 91" Target="LedOn\.vix">
+                <ConfigurableMethodCall Id="n23" Bounds="1657 0 132 91" Target="LedOn\.vix">
                     <ConfigurableMethodTerminal ConfiguredValue="2">
                         <Terminal Id="Color" Direction="Input" DataType="Int32" Hotspot="0.5 1" Bounds="54 56 30 27" />
                     </ConfigurableMethodTerminal>
@@ -166,7 +166,7 @@
                     <Terminal Id="SequenceIn" Direction="Input" Wire="w51" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="0 0.5" Bounds="0 33 18 18" />
                     <Terminal Id="SequenceOut" Direction="Output" Wire="w62" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="1 0.5" Bounds="114 33 18 18" />
                 </ConfigurableMethodCall>
-                <ConfigurableMethodCall Id="n25" Bounds="2348 0 132 91" Target="LedOn\.vix">
+                <ConfigurableMethodCall Id="n25" Bounds="2449 0 132 91" Target="LedOn\.vix">
                     <ConfigurableMethodTerminal ConfiguredValue="0">
                         <Terminal Id="Color" Direction="Input" DataType="Int32" Hotspot="0.5 1" Bounds="54 56 30 27" />
                     </ConfigurableMethodTerminal>
@@ -179,7 +179,7 @@
                     <Terminal Id="SequenceIn" Direction="Input" Wire="w41" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="0 0.5" Bounds="0 33 18 18" />
                     <Terminal Id="SequenceOut" Direction="Output" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="1 0.5" Bounds="114 33 18 18" />
                 </ConfigurableMethodCall>
-                <ConfigurableMethodCall Id="n27" Bounds="1152 0 101 91" Target="X3\.Lib:GlobalSetSingle">
+                <ConfigurableMethodCall Id="n27" Bounds="1253 0 101 91" Target="X3\.Lib:GlobalSetSingle">
                     <ConfigurableMethodTerminal ConfiguredValue="gyro_factor">
                         <Terminal Id="name" Direction="Input" DataType="String" Hotspot="0.5 1" Bounds="0 0 0 0" />
                     </ConfigurableMethodTerminal>
@@ -192,7 +192,7 @@
                     <Terminal Id="SequenceIn" Direction="Input" Wire="w58" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="0 0.5" Bounds="0 33 18 18" />
                     <Terminal Id="SequenceOut" Direction="Output" Wire="w64" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="1 0.5" Bounds="83 33 18 18" />
                 </ConfigurableMethodCall>
-                <ConfigurableMethodCall Id="n29" Bounds="989 0 163 91" Target="Arithmetic_Divide\.vix">
+                <ConfigurableMethodCall Id="n29" Bounds="1090 0 163 91" Target="Arithmetic_Divide\.vix">
                     <ConfigurableMethodTerminal ConfiguredValue="360">
                         <Terminal Id="X" Direction="Input" DataType="Single" Hotspot="0.5 1" Bounds="54 56 30 27" />
                     </ConfigurableMethodTerminal>
@@ -202,13 +202,13 @@
                     <ConfigurableMethodTerminal>
                         <Terminal Id="Result" Direction="Output" Wire="w55" DataType="Single" Hotspot="0.5 1" Bounds="116 56 30 27" />
                     </ConfigurableMethodTerminal>
-                    <Terminal Id="SequenceIn" Direction="Input" Wire="w37" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="0 0.5" Bounds="0 33 18 18" />
+                    <Terminal Id="SequenceIn" Direction="Input" Wire="w52" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="0 0.5" Bounds="0 33 18 18" />
                     <Terminal Id="SequenceOut" Direction="Output" Wire="w58" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="1 0.5" Bounds="145 33 18 18" />
                 </ConfigurableMethodCall>
-                <Comment Bounds="1029 -101 154 79" SizeMode="User" AttachStyle="Free">
+                <Comment Bounds="1107 -105 154 79" SizeMode="User" AttachStyle="Free">
                     <Content>gyroscoop geeft iets te weinig aan (maak a kleiner als hij te ver draait, of b groter)</Content>
                 </Comment>
-                <ConfigurableMethodCall Id="n32" Bounds="1455 0 101 91" Target="X3\.Lib:GlobalSetSingle">
+                <ConfigurableMethodCall Id="n32" Bounds="1556 0 101 91" Target="X3\.Lib:GlobalSetSingle">
                     <ConfigurableMethodTerminal ConfiguredValue="snelheidsfactor">
                         <Terminal Id="name" Direction="Input" DataType="String" Hotspot="0.5 1" Bounds="0 0 0 0" />
                     </ConfigurableMethodTerminal>
@@ -221,7 +221,7 @@
                     <Terminal Id="SequenceIn" Direction="Input" Wire="w35" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="0 0.5" Bounds="0 33 18 18" />
                     <Terminal Id="SequenceOut" Direction="Output" Wire="w51" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="1 0.5" Bounds="83 33 18 18" />
                 </ConfigurableMethodCall>
-                <ConfigurableMethodCall Id="n34" Bounds="1354 0 101 91" Target="X3\.Lib:GlobalSetSingle">
+                <ConfigurableMethodCall Id="n34" Bounds="1455 0 101 91" Target="X3\.Lib:GlobalSetSingle">
                     <ConfigurableMethodTerminal ConfiguredValue="pi">
                         <Terminal Id="name" Direction="Input" DataType="String" Hotspot="0.5 1" Bounds="0 0 0 0" />
                     </ConfigurableMethodTerminal>
@@ -235,12 +235,15 @@
                     <Terminal Id="SequenceOut" Direction="Output" Wire="w35" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="1 0.5" Bounds="83 33 18 18" />
                 </ConfigurableMethodCall>
                 <Wire Id="w35" Joints="N(n34:SequenceOut) N(n32:SequenceIn)" />
-                <Comment Bounds="-93 -207 270 95" SizeMode="User" AttachStyle="Free">
+                <Comment Bounds="155 -297 270 185" SizeMode="User" AttachStyle="Free">
                     <Content>Mijn Robot:
-* Stel de wielomtrek in, en de wielbasis.
+* Stel de wielomtrek in, en de wielbasis, en andere paramters.
 * Calibreer Gyro drift.
+Eventueel toe te voegen
 * Calibreer kleursensor.
-* Set de arm in de start-positie.</Content>
+* Set de arm in de start-positie.
+* Rij hysterse uit aandrijfwielen.
+* Zet op koers tegen een muur.</Content>
                 </Comment>
                 <ConfigurableMethodCall Id="n11" Bounds="888 0 101 91" Target="X3\.Lib:GlobalSetSingle">
                     <ConfigurableMethodTerminal ConfiguredValue="motorpoorten">
@@ -255,8 +258,8 @@
                     <Terminal Id="SequenceIn" Direction="Input" Wire="w42" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="0 0.5" Bounds="0 33 18 18" />
                     <Terminal Id="SequenceOut" Direction="Output" Wire="w37" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="1 0.5" Bounds="83 33 18 18" />
                 </ConfigurableMethodCall>
-                <Wire Id="w37" Joints="N(n11:SequenceOut) N(n29:SequenceIn)" />
-                <Comment Bounds="934 -104 87 80" SizeMode="User" AttachStyle="Free">
+                <Wire Id="w37" Joints="N(n11:SequenceOut) N(n50:SequenceIn)" />
+                <Comment Bounds="918 -106 87 80" SizeMode="User" AttachStyle="Free">
                     <Content>motoren links=A rechts=D
 ==&gt; "14"</Content>
                 </Comment>
@@ -277,7 +280,7 @@
                     <Terminal Id="SequenceOut" Direction="Output" Wire="w39" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="1 0.5" Bounds="83 33 18 18" />
                 </ConfigurableMethodCall>
                 <Wire Id="w39" Joints="N(n38:SequenceOut) N(n61:SequenceIn)" />
-                <ConfigurableWaitFor Id="n40" Bounds="2154 0 194 91" Target="GyroAngleCompare\.vix">
+                <ConfigurableWaitFor Id="n40" Bounds="2255 0 194 91" Target="GyroAngleCompare\.vix">
                     <ConfigurableMethodTerminal ConfiguredValue="1.Wired_1FAC2752-7229-46A0-AA06-E0731CAB9CAF">
                         <Terminal Id="Port" Direction="Input" Wire="w18" DataType="Single" Hotspot="0.5 1" Bounds="54 56 30 27" />
                     </ConfigurableMethodTerminal>
@@ -301,7 +304,7 @@
                 </ConfigurableWaitFor>
                 <Wire Id="w38" Joints="N(n10:SequenceOut) N(n58:SequenceIn)" />
                 <Wire Id="w41" Joints="N(n40:SequenceOut) N(n25:SequenceIn)" />
-                <Comment Bounds="1459 -100 87 89" SizeMode="User" AttachStyle="Free">
+                <Comment Bounds="1565 -108 87 93" SizeMode="User" AttachStyle="Free">
                     <Content>normaal gesproken is de senelheid nominaal </Content>
                 </Comment>
                 <ConfigurableMethodCall Id="n41" Bounds="787 0 101 91" Target="X3\.Lib:GlobalSetSingle">
@@ -318,7 +321,7 @@
                     <Terminal Id="SequenceOut" Direction="Output" Wire="w42" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="1 0.5" Bounds="83 33 18 18" />
                 </ConfigurableMethodCall>
                 <Wire Id="w42" Joints="N(n41:SequenceOut) N(n11:SequenceIn)" />
-                <Comment Bounds="799 -101 130 80" SizeMode="User" AttachStyle="Free">
+                <Comment Bounds="783 -103 130 80" SizeMode="User" AttachStyle="Free">
                     <Content>als gyro ondersteboven: -1
 anders: 1</Content>
                 </Comment>
@@ -660,7 +663,7 @@ anders: 1</Content>
                 <Wire Id="w61" Joints="N(n1:SequenceOut) N(n2:SequenceIn)" />
                 <Wire Id="w62" Joints="N(n23:SequenceOut) N(n16:SequenceIn)" />
                 <Wire Id="w57" Joints="N(n12:SequenceOut) N(n40:SequenceIn)" />
-                <ConfigurableWaitFor Id="n58" Bounds="1921 0 101 91" Target="TimeCompare\.vix">
+                <ConfigurableWaitFor Id="n58" Bounds="2022 0 101 91" Target="TimeCompare\.vix">
                     <ConfigurableMethodTerminal ConfiguredValue="0.5">
                         <Terminal Id="How\ Long" Direction="Input" DataType="Single" Hotspot="0.5 1" Bounds="54 56 30 27" />
                     </ConfigurableMethodTerminal>
@@ -692,6 +695,36 @@ anders: 1</Content>
                 </Comment>
                 <Wire Id="w64" Joints="N(n27:SequenceOut) N(n24:SequenceIn)" />
                 <Wire Id="w65" Joints="N(n61:SequenceOut) N(n14:SequenceIn)" />
+                <ConfigurableMethodCall Id="n50" Bounds="989 0 101 91" Target="X3\.Lib:GlobalSetSingle">
+                    <ConfigurableMethodTerminal ConfiguredValue="arm_poort">
+                        <Terminal Id="name" Direction="Input" DataType="String" Hotspot="0.5 1" Bounds="0 0 0 0" />
+                    </ConfigurableMethodTerminal>
+                    <ConfigurableMethodTerminal ConfiguredValue="2">
+                        <Terminal Id="valueIn" Direction="Input" DataType="Single" Hotspot="0.5 1" Bounds="54 56 30 27" />
+                    </ConfigurableMethodTerminal>
+                    <ConfigurableMethodTerminal ConfiguredValue="0">
+                        <Terminal Id="InterruptsToListenFor_16B03592_CD76_4D58_8DC3_E3C3091E327A" Direction="Input" DataType="Int32" Hotspot="0.5 1" Bounds="0 0 0 0" />
+                    </ConfigurableMethodTerminal>
+                    <Terminal Id="SequenceIn" Direction="Input" Wire="w37" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="0 0.5" Bounds="0 33 18 18" />
+                    <Terminal Id="SequenceOut" Direction="Output" Wire="w52" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="1 0.5" Bounds="83 33 18 18" />
+                </ConfigurableMethodCall>
+                <Wire Id="w52" Joints="N(n50:SequenceOut) N(n29:SequenceIn)" />
+                <Comment Bounds="1009 -96 87 80" SizeMode="User" AttachStyle="Free">
+                    <Content>motor van arm: B=2</Content>
+                </Comment>
+                <Comment Bounds="-143 -298 270 185" SizeMode="User" AttachStyle="Free">
+                    <Content>Instellen:
++ Wielomtrek (cm per omwenteling)
++ Wielbasis (breedte)
++ Motor-poorten
++ Gyroscoop-poort en orientatie
++ Poort van eventuele robotarm
+
+Voor optimalisatie:
++ Standaard snelheid
++ Versterkingsfactor (Kp) van koers-regelaar
+</Content>
+                </Comment>
             </BlockDiagram>
         </VirtualInstrument>
     </Namespace>

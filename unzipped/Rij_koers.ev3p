@@ -1305,6 +1305,50 @@
                 </PairedConfigurableMethodCall>
                 <Wire Id="w123" Joints="N(n99:SequenceOut) N(n103:SequenceIn)" />
                 <Wire Id="w124" Joints="N(n99:valueOut) v(22) h(101) N(n103:Boolean)" />
+                <ConfigurableMethodCall Id="n63" Bounds="61 -208 159 91" Target="CommentBlock\.vix" Comment="Rijd rechtuit met een bepaalde koers over een...">
+                    <Terminal Id="SequenceIn" Direction="Input" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="0 0.5" Bounds="0 33 18 18" />
+                    <Terminal Id="SequenceOut" Direction="Output" Wire="w64" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="1 0.5" Bounds="141 33 18 18" />
+                </ConfigurableMethodCall>
+                <ConfigurableMethodCall Id="n65" Bounds="220 -208 159 91" Target="CommentBlock\.vix" Comment="...bepaalde afstand. Eventu-eel geregeld.">
+                    <Terminal Id="SequenceIn" Direction="Input" Wire="w64" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="0 0.5" Bounds="0 33 18 18" />
+                    <Terminal Id="SequenceOut" Direction="Output" Wire="w128" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="1 0.5" Bounds="141 33 18 18" />
+                </ConfigurableMethodCall>
+                <Wire Id="w64" Joints="N(n63:SequenceOut) N(n65:SequenceIn)" />
+                <ConfigurableMethodCall Id="n72" Bounds="379 -208 159 91" Target="CommentBlock\.vix" Comment="In: &#xD;1) koers (graden)&#xD;2) afstand (cm)">
+                    <Terminal Id="SequenceIn" Direction="Input" Wire="w128" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="0 0.5" Bounds="0 33 18 18" />
+                    <Terminal Id="SequenceOut" Direction="Output" Wire="w75" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="1 0.5" Bounds="141 33 18 18" />
+                </ConfigurableMethodCall>
+                <ConfigurableMethodCall Id="n74" Bounds="538 -208 159 91" Target="CommentBlock\.vix" Comment="3) zet vooraf op koers&#xD;4) stop na afloop">
+                    <Terminal Id="SequenceIn" Direction="Input" Wire="w75" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="0 0.5" Bounds="0 33 18 18" />
+                    <Terminal Id="SequenceOut" Direction="Output" Wire="w79" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="1 0.5" Bounds="141 33 18 18" />
+                </ConfigurableMethodCall>
+                <Wire Id="w75" Joints="N(n72:SequenceOut) N(n74:SequenceIn)" />
+                <ConfigurableMethodCall Id="n76" Bounds="856 -208 159 91" Target="CommentBlock\.vix" Comment="6) rij achteruit en zet recht bij afwijking groter...">
+                    <Terminal Id="SequenceIn" Direction="Input" Wire="w78" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="0 0.5" Bounds="0 33 18 18" />
+                    <Terminal Id="SequenceOut" Direction="Output" Wire="w125" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="1 0.5" Bounds="141 33 18 18" />
+                </ConfigurableMethodCall>
+                <ConfigurableMethodCall Id="n77" Bounds="697 -208 159 91" Target="CommentBlock\.vix" Comment="5) gebruik feed-back regelaar tijdens rijden">
+                    <Terminal Id="SequenceIn" Direction="Input" Wire="w79" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="0 0.5" Bounds="0 33 18 18" />
+                    <Terminal Id="SequenceOut" Direction="Output" Wire="w78" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="1 0.5" Bounds="141 33 18 18" />
+                </ConfigurableMethodCall>
+                <Wire Id="w79" Joints="N(n74:SequenceOut) N(n77:SequenceIn)" />
+                <Wire Id="w78" Joints="N(n77:SequenceOut) N(n76:SequenceIn)" />
+                <ConfigurableMethodCall Id="n80" Bounds="1015 -208 159 91" Target="CommentBlock\.vix" Comment="...opgegeven hoek in graden (alleen bij...">
+                    <Terminal Id="SequenceIn" Direction="Input" Wire="w125" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="0 0.5" Bounds="0 33 18 18" />
+                    <Terminal Id="SequenceOut" Direction="Output" Wire="w126" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="1 0.5" Bounds="141 33 18 18" />
+                </ConfigurableMethodCall>
+                <Wire Id="w125" Joints="N(n76:SequenceOut) N(n80:SequenceIn)" />
+                <ConfigurableMethodCall Id="n110" Bounds="1174 -208 159 91" Target="CommentBlock\.vix" Comment="...gebruik van regelaar (5)">
+                    <Terminal Id="SequenceIn" Direction="Input" Wire="w126" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="0 0.5" Bounds="0 33 18 18" />
+                    <Terminal Id="SequenceOut" Direction="Output" Wire="w127" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="1 0.5" Bounds="141 33 18 18" />
+                </ConfigurableMethodCall>
+                <Wire Id="w126" Joints="N(n80:SequenceOut) N(n110:SequenceIn)" />
+                <ConfigurableMethodCall Id="n112" Bounds="1333 -208 159 91" Target="CommentBlock\.vix" Comment="Uit:&#xD;1) of het gelukt is">
+                    <Terminal Id="SequenceIn" Direction="Input" Wire="w127" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="0 0.5" Bounds="0 33 18 18" />
+                    <Terminal Id="SequenceOut" Direction="Output" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="1 0.5" Bounds="141 33 18 18" />
+                </ConfigurableMethodCall>
+                <Wire Id="w127" Joints="N(n110:SequenceOut) N(n112:SequenceIn)" />
+                <Wire Id="w128" Joints="N(n65:SequenceOut) N(n72:SequenceIn)" />
             </BlockDiagram>
             <Icon>
                 <Model0:IconPanel xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:Model0="clr-namespace:NationalInstruments.LabVIEW.VI.Design;assembly=NationalInstruments.LabVIEW.VI.SourceModel" xmlns:fpruntime="clr-namespace:NationalInstruments.LabVIEW.FrontPanelRuntime;assembly=NationalInstruments.LabVIEW.FrontPanelRuntime" xmlns:ation="http://schemas.microsoft.com/winfx/2006/xaml/presentation" Height="98" Width="56">

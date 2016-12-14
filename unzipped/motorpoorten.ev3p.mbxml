@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<EditorDefinitions>
+  <PolyGroups>
+    <PolyGroup BlockFamily="My" IconBaseName="PolyGroup_022_Motors2">
+      <Block>
+        <Mode>MyBlock</Mode>
+        <Description>Maak van de variabele 'motorpoorten' 2 losse getallen</Description>
+        <Reference Type="VILib" />
+        <PaletteInfo Weight="0.5" />
+        <ParamInfo Name="motorpoorten" DisplayName="motorpoorten" Direction="Input" Identification="identification_532_StringA.png" DataType="Single" DefaultValue="14" />
+        <ParamInfo Name="links" DisplayName="links" Direction="Output" Identification="Identification_292_DegreesAngle_Minus180.png" DataType="Single" />
+        <ParamInfo Name="rechts" DisplayName="rechts" Direction="Output" Identification="Identification_284_DegreesAngle_Plus180.png" DataType="Single" />
+      </Block>
+    </PolyGroup>
+  </PolyGroups>
+</EditorDefinitions>

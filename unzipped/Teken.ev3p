@@ -15,9 +15,9 @@
                     <ConfigurableMethodTerminal>
                         <Terminal Id="Result" Direction="Output" DataType="Boolean" Hotspot="0.5 1" Bounds="0 0 0 0" />
                     </ConfigurableMethodTerminal>
-                    <Terminal Id="SequenceOut" Direction="Output" Wire="w14" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="1 0.5" Bounds="52 33 18 18" />
+                    <Terminal Id="SequenceOut" Direction="Output" Wire="w17" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="1 0.5" Bounds="52 33 18 18" />
                 </StartBlock>
-                <ConfigurableMethodCall Id="n9" Bounds="469 528 163 91" Target="Comparison_GreaterEqual\.vix">
+                <ConfigurableMethodCall Id="n9" Bounds="582 528 163 91" Target="Comparison_GreaterEqual\.vix">
                     <ConfigurableMethodTerminal ConfiguredValue="1">
                         <Terminal Id="x" Direction="Input" Wire="w13" DataType="Single" Hotspot="0.5 1" Bounds="54 56 30 27" />
                     </ConfigurableMethodTerminal>
@@ -27,10 +27,10 @@
                     <ConfigurableMethodTerminal>
                         <Terminal Id="Result" Direction="Output" Wire="w18" DataType="Boolean" Hotspot="0.5 1" Bounds="116 56 30 27" />
                     </ConfigurableMethodTerminal>
-                    <Terminal Id="SequenceIn" Direction="Input" Wire="w14" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="0 0.5" Bounds="0 33 18 18" />
+                    <Terminal Id="SequenceIn" Direction="Input" Wire="w16" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="0 0.5" Bounds="0 33 18 18" />
                     <Terminal Id="SequenceOut" Direction="Output" Wire="w11" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="1 0.5" Bounds="145 33 18 18" />
                 </ConfigurableMethodCall>
-                <PairedConfigurableMethodCall Id="n19" Bounds="632 528 85 91" Target="CaseSelector_Boolean\.vix" PairedStructure="n16">
+                <PairedConfigurableMethodCall Id="n19" Bounds="745 528 85 91" Target="CaseSelector_Boolean\.vix" PairedStructure="n16">
                     <ConfigurableMethodTerminal ConfiguredValue="False">
                         <Terminal Id="Boolean" Direction="Input" Wire="w18" DataType="Boolean" Hotspot="0.5 1" Bounds="54 56 30 27" />
                     </ConfigurableMethodTerminal>
@@ -40,7 +40,7 @@
                     <Terminal Id="SequenceIn" Direction="Input" Wire="w11" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="0 0.5" Bounds="0 33 18 18" />
                     <Terminal Id="SequenceOut" Direction="Output" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="1 0.5" Bounds="0 0 0 0" />
                 </PairedConfigurableMethodCall>
-                <ConfigurableCaseStructure Id="n16" Bounds="717 453 166 205" DataType="Boolean" UserSelectorBounds="0 0 0 0" Selected="D17" Default="D17" PairedConfigurableMethodCall="n19">
+                <ConfigurableCaseStructure Id="n16" Bounds="830 453 166 205" DataType="Boolean" UserSelectorBounds="0 0 0 0" Selected="D17" Default="D17" PairedConfigurableMethodCall="n19">
                     <Terminal Id="SequenceOut" Direction="Output" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="1 0.5" Bounds="148 108 18 18" />
                     <ConfigurableCaseStructure.Case Id="D17" Bounds="10 4 146 198" Pattern="True">
                         <SequenceNode Id="Output" Bounds="0 104 18 18">
@@ -88,19 +88,24 @@
                 </ConfigurableCaseStructure>
                 <Wire Id="w18" Joints="N(n9:Result) v(22) h(101) N(n19:Boolean)" />
                 <Wire Id="w11" Joints="N(n9:SequenceOut) N(n19:SequenceIn)" />
-                <Wire Id="w14" Joints="N(n1:SequenceOut) N(n9:SequenceIn)" />
                 <ConfigurableMegaAccessor Id="n15" Bounds="262 528 49 91" Target="X3\.Lib:ConfigurableMegaAccessor" AccessorType="Input">
                     <ConfigurableMethodTerminal>
                         <Terminal Id="waarde" Direction="Output" Wire="w13" DataType="Single" Hotspot="0.5 1" Bounds="10 56 30 27" />
                     </ConfigurableMethodTerminal>
                 </ConfigurableMegaAccessor>
-                <ConfigurableMegaAccessor Id="n17" Bounds="951 526 49 91" Target="X3\.Lib:ConfigurableMegaAccessor" AccessorType="Output">
+                <ConfigurableMegaAccessor Id="n17" Bounds="1185 529 49 91" Target="X3\.Lib:ConfigurableMegaAccessor" AccessorType="Output">
                     <ConfigurableMethodTerminal ConfiguredValue="0">
                         <Terminal Id="teken" Direction="Input" Wire="w15" DataType="Single" Hotspot="0.5 1" Bounds="10 56 30 27" />
                     </ConfigurableMethodTerminal>
                 </ConfigurableMegaAccessor>
-                <Wire Id="w13" Joints="N(n15:waarde) v(22) h(251) N(n9:x)" />
-                <Wire Id="w15" Joints="N(b20:n16) v(22) h(162) N(n17:teken)" />
+                <Wire Id="w13" Joints="N(n15:waarde) v(22) h(364) N(n9:x)" />
+                <Wire Id="w15" Joints="N(b20:n16) v(22) h(283) N(n17:teken)" />
+                <ConfigurableMethodCall Id="n18" Bounds="423 528 159 91" Target="CommentBlock\.vix" Comment="Het &quot;teken&quot; van de invoer: -1 als &lt;0, anders +1">
+                    <Terminal Id="SequenceIn" Direction="Input" Wire="w17" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="0 0.5" Bounds="0 33 18 18" />
+                    <Terminal Id="SequenceOut" Direction="Output" Wire="w16" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="1 0.5" Bounds="141 33 18 18" />
+                </ConfigurableMethodCall>
+                <Wire Id="w16" Joints="N(n18:SequenceOut) N(n9:SequenceIn)" />
+                <Wire Id="w17" Joints="N(n1:SequenceOut) N(n18:SequenceIn)" />
             </BlockDiagram>
         </VirtualInstrument>
     </Namespace>

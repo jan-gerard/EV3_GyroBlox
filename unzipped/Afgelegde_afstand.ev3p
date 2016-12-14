@@ -16,9 +16,9 @@
                     <ConfigurableMethodTerminal>
                         <Terminal Id="Result" Direction="Output" DataType="Boolean" Hotspot="0.5 1" Bounds="0 0 0 0" />
                     </ConfigurableMethodTerminal>
-                    <Terminal Id="SequenceOut" Direction="Output" Wire="w27" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="1 0.5" Bounds="52 33 18 18" />
+                    <Terminal Id="SequenceOut" Direction="Output" Wire="w43" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="1 0.5" Bounds="52 33 18 18" />
                 </StartBlock>
-                <ConfigurableMethodCall Id="n93" Bounds="2526 660 101 91" Target="X3\.Lib:GlobalGetSingle">
+                <ConfigurableMethodCall Id="n93" Bounds="2239 660 101 91" Target="X3\.Lib:GlobalGetSingle">
                     <ConfigurableMethodTerminal>
                         <Terminal Id="valueOut" Direction="Output" Wire="w39" DataType="Single" Hotspot="0.5 1" Bounds="54 56 30 27" />
                     </ConfigurableMethodTerminal>
@@ -28,19 +28,19 @@
                     <Terminal Id="SequenceIn" Direction="Input" Wire="w113" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="0 0.5" Bounds="0 33 18 18" />
                     <Terminal Id="SequenceOut" Direction="Output" Wire="w110" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="1 0.5" Bounds="83 33 18 18" />
                 </ConfigurableMethodCall>
-                <ConfigurableMethodCall Id="n94" Bounds="2262 660 132 91" Target="RotationValueRotations\.vix">
+                <ConfigurableMethodCall Id="n94" Bounds="1975 660 132 91" Target="RotationValueRotations\.vix">
                     <ConfigurableMethodTerminal ConfiguredValue="1.Wired_1FAC2752-7229-46A0-AA06-E0731CAB9CAF">
-                        <Terminal Id="MotorPort" Direction="Input" Wire="w25" DataType="Single" Hotspot="0.5 1" Bounds="54 56 30 27" />
+                        <Terminal Id="MotorPort" Direction="Input" Wire="w51" DataType="Single" Hotspot="0.5 1" Bounds="54 56 30 27" />
                     </ConfigurableMethodTerminal>
                     <ConfigurableMethodTerminal>
                         <Terminal Id="Rotations" Direction="Output" Wire="w111" DataType="Single" Hotspot="0.5 1" Bounds="85 56 30 27" />
                     </ConfigurableMethodTerminal>
-                    <Terminal Id="SequenceIn" Direction="Input" Wire="w23" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="0 0.5" Bounds="0 33 18 18" />
+                    <Terminal Id="SequenceIn" Direction="Input" Wire="w44" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="0 0.5" Bounds="0 33 18 18" />
                     <Terminal Id="SequenceOut" Direction="Output" Wire="w107" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="1 0.5" Bounds="114 33 18 18" />
                 </ConfigurableMethodCall>
-                <ConfigurableMethodCall Id="n95" Bounds="2394 660 132 91" Target="RotationValueRotations\.vix">
+                <ConfigurableMethodCall Id="n95" Bounds="2107 660 132 91" Target="RotationValueRotations\.vix">
                     <ConfigurableMethodTerminal ConfiguredValue="1.Wired_1FAC2752-7229-46A0-AA06-E0731CAB9CAF">
-                        <Terminal Id="MotorPort" Direction="Input" Wire="w26" DataType="Single" Hotspot="0.5 1" Bounds="54 56 30 27" />
+                        <Terminal Id="MotorPort" Direction="Input" Wire="w52" DataType="Single" Hotspot="0.5 1" Bounds="54 56 30 27" />
                     </ConfigurableMethodTerminal>
                     <ConfigurableMethodTerminal>
                         <Terminal Id="Rotations" Direction="Output" Wire="w112" DataType="Single" Hotspot="0.5 1" Bounds="85 56 30 27" />
@@ -50,7 +50,7 @@
                 </ConfigurableMethodCall>
                 <Wire Id="w113" Joints="N(n95:SequenceOut) N(n93:SequenceIn)" />
                 <Wire Id="w107" Joints="N(n94:SequenceOut) N(n95:SequenceIn)" />
-                <ConfigurableMethodCall Id="n99" Bounds="2627 660 225 91" Target="X3Placeholder_2A058539\-ED76\-4476\-93FE\-CCE8AA559C5A_MathEquation\.vix">
+                <ConfigurableMethodCall Id="n99" Bounds="2340 660 225 91" Target="X3Placeholder_2A058539\-ED76\-4476\-93FE\-CCE8AA559C5A_MathEquation\.vix">
                     <ConfigurableMethodTerminal ConfiguredValue="1">
                         <Terminal Id="X" Direction="Input" Wire="w112" DataType="Single" Hotspot="0.5 1" Bounds="54 56 30 27" />
                     </ConfigurableMethodTerminal>
@@ -73,74 +73,14 @@
                     <Terminal Id="SequenceOut" Direction="Output" Wire="w29" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="1 0.5" Bounds="207 33 18 18" />
                 </ConfigurableMethodCall>
                 <Wire Id="w110" Joints="N(n93:SequenceOut) N(n99:SequenceIn)" />
-                <Wire Id="w111" Joints="N(n94:Rotations) v(22) h(365) N(n99:Y) B(0) v(46) h(660) N(n26:X)" />
-                <Wire Id="w112" Joints="N(n95:Rotations) v(14.42) h(202) N(n99:X) B(0) v(54) h(559) N(n26:Y)" />
-                <ConfigurableMethodCall Id="n11" Bounds="1711 660 101 91" Target="X3\.Lib:GlobalGetSingle">
-                    <ConfigurableMethodTerminal>
-                        <Terminal Id="valueOut" Direction="Output" Wire="w20" DataType="Single" Hotspot="0.5 1" Bounds="54 56 30 27" />
-                    </ConfigurableMethodTerminal>
-                    <ConfigurableMethodTerminal ConfiguredValue="motorpoorten">
-                        <Terminal Id="name" Direction="Input" DataType="String" Hotspot="0.5 1" Bounds="0 0 0 0" />
-                    </ConfigurableMethodTerminal>
-                    <Terminal Id="SequenceIn" Direction="Input" Wire="w27" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="0 0.5" Bounds="0 33 18 18" />
-                    <Terminal Id="SequenceOut" Direction="Output" Wire="w19" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="1 0.5" Bounds="83 33 18 18" />
-                </ConfigurableMethodCall>
-                <ConfigurableMethodCall Id="n18" Bounds="1812 660 225 91" Target="X3Placeholder_2A058539\-ED76\-4476\-93FE\-CCE8AA559C5A_MathEquation\.vix">
-                    <ConfigurableMethodTerminal ConfiguredValue="1">
-                        <Terminal Id="X" Direction="Input" Wire="w20" DataType="Single" Hotspot="0.5 1" Bounds="54 56 30 27" />
-                    </ConfigurableMethodTerminal>
-                    <ConfigurableMethodTerminal ConfiguredValue="0">
-                        <Terminal Id="Y" Direction="Input" DataType="Single" Hotspot="0.5 1" Bounds="85 56 30 27" />
-                    </ConfigurableMethodTerminal>
-                    <ConfigurableMethodTerminal ConfiguredValue="0">
-                        <Terminal Id="C" Direction="Input" DataType="Single" Hotspot="0.5 1" Bounds="116 56 30 27" />
-                    </ConfigurableMethodTerminal>
-                    <ConfigurableMethodTerminal ConfiguredValue="0">
-                        <Terminal Id="D" Direction="Input" DataType="Single" Hotspot="0.5 1" Bounds="147 56 30 27" />
-                    </ConfigurableMethodTerminal>
-                    <ConfigurableMethodTerminal ConfiguredValue="a%10">
-                        <Terminal Id="Equation" Direction="Input" DataType="String" Hotspot="0.5 1" Bounds="0 0 0 0" />
-                    </ConfigurableMethodTerminal>
-                    <ConfigurableMethodTerminal>
-                        <Terminal Id="Result" Direction="Output" Wire="w25" DataType="Single" Hotspot="0.5 1" Bounds="178 56 30 27" />
-                    </ConfigurableMethodTerminal>
-                    <Terminal Id="SequenceIn" Direction="Input" Wire="w19" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="0 0.5" Bounds="0 33 18 18" />
-                    <Terminal Id="SequenceOut" Direction="Output" Wire="w22" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="1 0.5" Bounds="207 33 18 18" />
-                </ConfigurableMethodCall>
-                <Wire Id="w25" Joints="N(n18:Result) v(46) h(326) N(n94:MotorPort)" />
-                <Wire Id="w19" Joints="N(n11:SequenceOut) N(n18:SequenceIn)" />
-                <ConfigurableMethodCall Id="n21" Bounds="2037 660 225 91" Target="X3Placeholder_2A058539\-ED76\-4476\-93FE\-CCE8AA559C5A_MathEquation\.vix">
-                    <ConfigurableMethodTerminal ConfiguredValue="1">
-                        <Terminal Id="X" Direction="Input" Wire="w20" DataType="Single" Hotspot="0.5 1" Bounds="54 56 30 27" />
-                    </ConfigurableMethodTerminal>
-                    <ConfigurableMethodTerminal ConfiguredValue="0">
-                        <Terminal Id="Y" Direction="Input" DataType="Single" Hotspot="0.5 1" Bounds="85 56 30 27" />
-                    </ConfigurableMethodTerminal>
-                    <ConfigurableMethodTerminal ConfiguredValue="0">
-                        <Terminal Id="C" Direction="Input" DataType="Single" Hotspot="0.5 1" Bounds="116 56 30 27" />
-                    </ConfigurableMethodTerminal>
-                    <ConfigurableMethodTerminal ConfiguredValue="0">
-                        <Terminal Id="D" Direction="Input" DataType="Single" Hotspot="0.5 1" Bounds="147 56 30 27" />
-                    </ConfigurableMethodTerminal>
-                    <ConfigurableMethodTerminal ConfiguredValue="floor(a/10)">
-                        <Terminal Id="Equation" Direction="Input" DataType="String" Hotspot="0.5 1" Bounds="0 0 0 0" />
-                    </ConfigurableMethodTerminal>
-                    <ConfigurableMethodTerminal>
-                        <Terminal Id="Result" Direction="Output" Wire="w26" DataType="Single" Hotspot="0.5 1" Bounds="178 56 30 27" />
-                    </ConfigurableMethodTerminal>
-                    <Terminal Id="SequenceIn" Direction="Input" Wire="w22" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="0 0.5" Bounds="0 33 18 18" />
-                    <Terminal Id="SequenceOut" Direction="Output" Wire="w23" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="1 0.5" Bounds="207 33 18 18" />
-                </ConfigurableMethodCall>
-                <Wire Id="w23" Joints="N(n21:SequenceOut) N(n94:SequenceIn)" />
-                <Wire Id="w26" Joints="N(n21:Result) v(30) h(233) N(n95:MotorPort)" />
-                <Wire Id="w20" Joints="N(n11:valueOut) v(30) h(326) N(n21:X) B(0) v(22) h(101) N(n18:X)" />
-                <Wire Id="w22" Joints="N(n18:SequenceOut) N(n21:SequenceIn)" />
+                <Wire Id="w111" Joints="N(n94:Rotations) v(46) h(660) N(n26:X) B(0) v(22) h(365) N(n99:Y)" />
+                <Wire Id="w112" Joints="N(n95:Rotations) v(54) h(559) N(n26:Y) B(0) v(14.42) h(202) N(n99:X)" />
                 <ConfigurableMegaAccessor Id="n28" Bounds="1550 660 49 91" Target="X3\.Lib:ConfigurableMegaAccessor" AccessorType="Input">
                     <ConfigurableMethodTerminal>
                         <Terminal Id="Startpositie" Direction="Output" Wire="w24" DataType="Single" Hotspot="0.5 1" Bounds="10 56 30 27" />
                     </ConfigurableMethodTerminal>
                 </ConfigurableMegaAccessor>
-                <ConfigurableMegaAccessor Id="n30" Bounds="3542 659 80 91" Target="X3\.Lib:ConfigurableMegaAccessor" AccessorType="Output">
+                <ConfigurableMegaAccessor Id="n30" Bounds="3254 661 80 91" Target="X3\.Lib:ConfigurableMegaAccessor" AccessorType="Output">
                     <ConfigurableMethodTerminal ConfiguredValue="0">
                         <Terminal Id="Afstand" Direction="Input" Wire="w28" DataType="Single" Hotspot="0.5 1" Bounds="10 56 30 27" />
                     </ConfigurableMethodTerminal>
@@ -148,10 +88,9 @@
                         <Terminal Id="Hoek" Direction="Input" Wire="w37" DataType="Single" Hotspot="0.5 1" Bounds="41 56 30 27" />
                     </ConfigurableMethodTerminal>
                 </ConfigurableMegaAccessor>
-                <Wire Id="w24" Joints="N(n28:Startpositie) v(38) h(1214) N(n99:D)" />
-                <Wire Id="w28" Joints="N(n99:Result) v(22) h(747) N(n30:Afstand)" />
-                <Wire Id="w27" Joints="N(n1:SequenceOut) N(n11:SequenceIn)" />
-                <ConfigurableMethodCall Id="n26" Bounds="2953 660 225 91" Target="X3Placeholder_2A058539\-ED76\-4476\-93FE\-CCE8AA559C5A_MathEquation\.vix">
+                <Wire Id="w24" Joints="N(n28:Startpositie) v(38) h(927) N(n99:D)" />
+                <Wire Id="w28" Joints="N(n99:Result) v(22) h(746) N(n30:Afstand)" />
+                <ConfigurableMethodCall Id="n26" Bounds="2666 660 225 91" Target="X3Placeholder_2A058539\-ED76\-4476\-93FE\-CCE8AA559C5A_MathEquation\.vix">
                     <ConfigurableMethodTerminal ConfiguredValue="1">
                         <Terminal Id="X" Direction="Input" Wire="w111" DataType="Single" Hotspot="0.5 1" Bounds="54 56 30 27" />
                     </ConfigurableMethodTerminal>
@@ -174,7 +113,7 @@
                     <Terminal Id="SequenceOut" Direction="Output" Wire="w34" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="1 0.5" Bounds="207 33 18 18" />
                 </ConfigurableMethodCall>
                 <Wire Id="w29" Joints="N(n99:SequenceOut) N(n29:SequenceIn)" />
-                <ConfigurableMethodCall Id="n29" Bounds="2852 660 101 91" Target="X3\.Lib:GlobalGetSingle">
+                <ConfigurableMethodCall Id="n29" Bounds="2565 660 101 91" Target="X3\.Lib:GlobalGetSingle">
                     <ConfigurableMethodTerminal>
                         <Terminal Id="valueOut" Direction="Output" Wire="w40" DataType="Single" Hotspot="0.5 1" Bounds="54 56 30 27" />
                     </ConfigurableMethodTerminal>
@@ -184,7 +123,7 @@
                     <Terminal Id="SequenceIn" Direction="Input" Wire="w29" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="0 0.5" Bounds="0 33 18 18" />
                     <Terminal Id="SequenceOut" Direction="Output" Wire="w35" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="1 0.5" Bounds="83 33 18 18" />
                 </ConfigurableMethodCall>
-                <ConfigurableMethodCall Id="n32" Bounds="3178 660 101 91" Target="X3\.Lib:GlobalGetSingle">
+                <ConfigurableMethodCall Id="n32" Bounds="2891 660 101 91" Target="X3\.Lib:GlobalGetSingle">
                     <ConfigurableMethodTerminal>
                         <Terminal Id="valueOut" Direction="Output" Wire="w38" DataType="Single" Hotspot="0.5 1" Bounds="54 56 30 27" />
                     </ConfigurableMethodTerminal>
@@ -194,7 +133,7 @@
                     <Terminal Id="SequenceIn" Direction="Input" Wire="w34" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="0 0.5" Bounds="0 33 18 18" />
                     <Terminal Id="SequenceOut" Direction="Output" Wire="w36" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="1 0.5" Bounds="83 33 18 18" />
                 </ConfigurableMethodCall>
-                <ConfigurableMethodCall Id="n35" Bounds="3279 660 225 91" Target="X3Placeholder_2A058539\-ED76\-4476\-93FE\-CCE8AA559C5A_MathEquation\.vix">
+                <ConfigurableMethodCall Id="n35" Bounds="2992 660 225 91" Target="X3Placeholder_2A058539\-ED76\-4476\-93FE\-CCE8AA559C5A_MathEquation\.vix">
                     <ConfigurableMethodTerminal ConfiguredValue="1">
                         <Terminal Id="X" Direction="Input" Wire="w41" DataType="Single" Hotspot="0.5 1" Bounds="54 56 30 27" />
                     </ConfigurableMethodTerminal>
@@ -219,11 +158,43 @@
                 <Wire Id="w35" Joints="N(n29:SequenceOut) N(n26:SequenceIn)" />
                 <Wire Id="w34" Joints="N(n26:SequenceOut) N(n32:SequenceIn)" />
                 <Wire Id="w36" Joints="N(n32:SequenceOut) N(n35:SequenceIn)" />
-                <Wire Id="w37" Joints="N(n35:Result) v(37) h(126) N(n30:Hoek)" />
+                <Wire Id="w37" Joints="N(n35:Result) v(37) h(125) N(n30:Hoek)" />
                 <Wire Id="w38" Joints="N(n32:valueOut) v(30) h(132) N(n35:Y)" />
-                <Wire Id="w39" Joints="N(n93:valueOut) v(30) h(163) N(n99:C) B(0) v(62) h(489) N(n26:C)" />
+                <Wire Id="w39" Joints="N(n93:valueOut) v(62) h(489) N(n26:C) B(0) v(30) h(163) N(n99:C)" />
                 <Wire Id="w40" Joints="N(n29:valueOut) v(30) h(194) N(n26:D)" />
                 <Wire Id="w41" Joints="N(n26:Result) v(38) h(202) N(n35:X)" />
+                <ConfigurableMethodCall Id="n36" Bounds="1812 660 163 91" Target="motorpoorten\.ev3p">
+                    <ConfigurableMethodTerminal ConfiguredValue="0">
+                        <Terminal Id="InterruptsToListenFor_16B03592_CD76_4D58_8DC3_E3C3091E327A" Direction="Input" DataType="Int32" Hotspot="0.5 1" Bounds="0 0 0 0" />
+                    </ConfigurableMethodTerminal>
+                    <ConfigurableMethodTerminal ConfiguredValue="14">
+                        <Terminal Id="motorpoorten" Direction="Input" Wire="w45" DataType="Single" Hotspot="0.5 1" Bounds="54 56 30 27" />
+                    </ConfigurableMethodTerminal>
+                    <ConfigurableMethodTerminal>
+                        <Terminal Id="rechts" Direction="Output" Wire="w51" DataType="Single" Hotspot="0.5 1" Bounds="116 56 30 27" />
+                    </ConfigurableMethodTerminal>
+                    <ConfigurableMethodTerminal>
+                        <Terminal Id="links" Direction="Output" Wire="w52" DataType="Single" Hotspot="0.5 1" Bounds="85 56 30 27" />
+                    </ConfigurableMethodTerminal>
+                    <Terminal Id="SequenceIn" Direction="Input" Wire="w42" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="0 0.5" Bounds="0 33 18 18" />
+                    <Terminal Id="SequenceOut" Direction="Output" Wire="w44" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="1 0.5" Bounds="145 33 18 18" />
+                </ConfigurableMethodCall>
+                <Wire Id="w51" Joints="N(n36:rechts) v(14) h(101) N(n94:MotorPort)" />
+                <Wire Id="w52" Joints="N(n36:links) v(22) h(264) N(n95:MotorPort)" />
+                <ConfigurableMethodCall Id="n11" Bounds="1711 660 101 91" Target="X3\.Lib:GlobalGetSingle">
+                    <ConfigurableMethodTerminal>
+                        <Terminal Id="valueOut" Direction="Output" Wire="w45" DataType="Single" Hotspot="0.5 1" Bounds="54 56 30 27" />
+                    </ConfigurableMethodTerminal>
+                    <ConfigurableMethodTerminal ConfiguredValue="motorpoorten">
+                        <Terminal Id="name" Direction="Input" DataType="String" Hotspot="0.5 1" Bounds="0 0 0 0" />
+                    </ConfigurableMethodTerminal>
+                    <Terminal Id="SequenceIn" Direction="Input" Wire="w43" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="0 0.5" Bounds="0 33 18 18" />
+                    <Terminal Id="SequenceOut" Direction="Output" Wire="w42" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="1 0.5" Bounds="83 33 18 18" />
+                </ConfigurableMethodCall>
+                <Wire Id="w42" Joints="N(n11:SequenceOut) N(n36:SequenceIn)" />
+                <Wire Id="w43" Joints="N(n1:SequenceOut) N(n11:SequenceIn)" />
+                <Wire Id="w44" Joints="N(n36:SequenceOut) N(n94:SequenceIn)" />
+                <Wire Id="w45" Joints="N(n11:valueOut) v(22) h(101) N(n36:motorpoorten)" />
             </BlockDiagram>
         </VirtualInstrument>
     </Namespace>

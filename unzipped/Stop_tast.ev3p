@@ -87,7 +87,7 @@
                 </ConfigurableMethodCall>
                 <Wire Id="w19" Joints="N(n13:SequenceOut) N(n24:SequenceIn)" />
                 <Wire Id="w21" Joints="N(n13:Result) v(22) h(101) N(n24:Boolean)" />
-                <ConfigurableCaseStructure Id="n21" Bounds="979 245 259 176" DataType="Boolean" UserSelectorBounds="0 0 0 0" Selected="D23" Default="D22" PairedConfigurableMethodCall="n24">
+                <ConfigurableCaseStructure Id="n21" Bounds="979 245 259 176" DataType="Boolean" UserSelectorBounds="0 0 0 0" Selected="D22" Default="D22" PairedConfigurableMethodCall="n24">
                     <Terminal Id="SequenceOut" Direction="Output" Wire="w22" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="1 0.5" Bounds="241 79 18 18" />
                     <ConfigurableCaseStructure.Case Id="D22" Bounds="10 4 239 169" Pattern="True">
                         <SequenceNode Id="Output" Bounds="0 75 18 18">
