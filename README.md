@@ -3,7 +3,7 @@ LEGO Mindstorms EV3 gyroscope-controlled driving blocks library
 
 This library contains high-level building blocks in the standared EV3 Lego Mindstorms visual programming envirionment (LabView driven), for controlling two motors for driving a fixed distance and angle. The direction can be either controlled with feedback from the gyro-sensor, or open-loop. Also, a curve can be driven. The parameters can be adjusted to match the wheel diameter and distance, such that distance driven and turns made are correct.
 
-The basic block with the parameters is Mijn_robot. ![mijn_robot](https://github.com/jan-gerard/EV3_GyroBlox/blob/master/images/mijn_robot.png)
+The basic block with the parameters is Mijn_robot. ![mijn_robot](https://github.com/jan-gerard/EV3_GyroBlox/raw/gh-pages/images/mijn_robot.png)
 
 The block Zet_op_koers rotates the robot to the desired heading.
 
@@ -11,7 +11,7 @@ The block Rij_koers drives a distance (optionally after setting the correct head
 
 The block Rij_bocht drives a circle section. You can enter distance and radius, distance and angle, or radius an angle. This block can optionally use the gyro-sensor. This block uses Rij_koers to follow the momentary heading of the curve.
 
-The block Richt_tegen_muur aligns the robot with a wall. You can enter the known heading to align the gyro-based compass. ![richt_tegen_muur](https://github.com/jan-gerard/EV3_GyroBlox/blob/master/images/richt_tegen_muur.png)
+The block Richt_tegen_muur aligns the robot with a wall. You can enter the known heading to align the gyro-based compass. ![richt_tegen_muur](https://github.com/jan-gerard/EV3_GyroBlox/raw/gh-pages/images/richt_tegen_muur.png)
 
 The block Koers_is sets the current heading to a specific value. This block is used by Richt_tegen_muur.
 
