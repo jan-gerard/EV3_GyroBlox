@@ -3,7 +3,7 @@ LEGO Mindstorms EV3 gyroscope-controlled driving blocks library
 
 This library contains high-level building blocks in the standared EV3 Lego Mindstorms visual programming envirionment (LabView driven), for controlling two motors for driving a fixed distance and angle. The direction can be either controlled with feedback from the gyro-sensor, or open-loop. Also, a curve can be driven. The parameters can be adjusted to match the wheel diameter and distance, such that distance driven and turns made are correct.
 
-The basic block with the parameters is Mijn_robot. 
+The basic block with the parameters is Mijn_robot. [[https://github.com/jan-gerard/EV3_GyroBlox/blob/master/images/mijn_robot.png]]
 
 The block Zet_op_koers rotates the robot to the desired heading.
 
