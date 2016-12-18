@@ -126,7 +126,7 @@
                     <Terminal Id="SequenceIn" Direction="Input" Wire="w62" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="0 0.5" Bounds="0 33 18 18" />
                     <Terminal Id="SequenceOut" Direction="Output" Wire="w17" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="1 0.5" Bounds="83 33 18 18" />
                 </ConfigurableMethodCall>
-                <Wire Id="w18" Joints="N(n16:valueOut) v(22) h(101) N(n10:Port) B(0) v(30) h(334) N(n12:Port) B(0) v(38) h(466) N(n40:Port)" />
+                <Wire Id="w18" Joints="N(n16:valueOut) v(38) h(466) N(n40:Port) B(0) v(30) h(334) N(n12:Port) B(0) v(22) h(101) N(n10:Port)" />
                 <Wire Id="w17" Joints="N(n16:SequenceOut) N(n10:SequenceIn)" />
                 <Comment Bounds="690 -103 87 80" SizeMode="User" AttachStyle="Free">
                     <Content>gyroscoop aansluiting</Content>

@@ -78,7 +78,7 @@
                 </ConfigurableMegaAccessor>
                 <Wire Id="w11" Joints="N(n18:Result) v(22) h(334) N(n15:rechts)" />
                 <Wire Id="w12" Joints="N(n21:Result) v(30) h(78) N(n15:links)" />
-                <Wire Id="w9" Joints="N(n14:motorpoorten) v(32) h(523) N(n18:X) B(0) v(38) h(748) N(n21:X)" />
+                <Wire Id="w9" Joints="N(n14:motorpoorten) v(38) h(748) N(n21:X) B(0) v(32) h(523) N(n18:X)" />
                 <Wire Id="w10" Joints="N(n1:SequenceOut) N(n24:SequenceIn)" />
                 <ConfigurableMethodCall Id="n24" Bounds="1721 660 159 91" Target="CommentBlock\.vix" Comment="Zet combinatie-getal van 2 motoren om in... ">
                     <Terminal Id="SequenceIn" Direction="Input" Wire="w10" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="0 0.5" Bounds="0 33 18 18" />

@@ -657,9 +657,9 @@
                     <Terminal Id="SequenceIn" Direction="Input" Wire="w61" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="0 0.5" Bounds="0 33 18 18" />
                     <Terminal Id="SequenceOut" Direction="Output" Wire="w60" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="1 0.5" Bounds="145 33 18 18" />
                 </ConfigurableMethodCall>
-                <Wire Id="w60" Joints="N(n48:SequenceOut) N(n63:SequenceIn) B(0) h(34.5) v(236) N(n15:SequenceIn)" />
+                <Wire Id="w60" Joints="N(n48:SequenceOut) h(34.5) v(236) N(n15:SequenceIn) B(0) N(n63:SequenceIn)" />
                 <Wire Id="w61" Joints="N(n46:SequenceOut) N(n48:SequenceIn)" />
-                <Wire Id="w51" Joints="N(n48:Result) v(350) h(986) N(b47:n15) B(0) v(62) h(688) N(n25:koers)" />
+                <Wire Id="w51" Joints="N(n48:Result) v(62) h(688) N(n25:koers) B(0) v(350) h(986) N(b47:n15)" />
                 <Wire Id="w62" Joints="N(n46:afwijking) v(22) h(163) N(n48:X)" />
                 <Wire Id="w48" Joints="N(n38:valueOut) v(30) h(-1117) N(n55:hoek1)" />
                 <Wire Id="w45" Joints="N(n32:SequenceOut) N(n46:SequenceIn)" />
@@ -837,7 +837,7 @@
                 <Wire Id="w80" Joints="N(n69:Result) v(22) h(101) N(n41:valueIn)" />
                 <Wire Id="w81" Joints="N(n41:SequenceOut) h(10) v(105) h(-895) v(91) N(n32:SequenceIn)" />
                 <Wire Id="w89" Joints="N(n25:SequenceOut) N(n52:SequenceIn)" />
-                <Wire Id="w78" Joints="N(n65:valueOut) v(86) h(541) N(n25:geregeld) B(0) v(22) h(101) N(n82:Boolean)" />
+                <Wire Id="w78" Joints="N(n65:valueOut) v(22) h(101) N(n82:Boolean) B(0) v(86) h(541) N(n25:geregeld)" />
                 <ConfigurableCaseStructure Id="n79" Bounds="2436 609 231 176" DataType="Boolean" UserSelectorBounds="0 0 0 0" Selected="D81" Default="D80" PairedConfigurableMethodCall="n82">
                     <Terminal Id="SequenceOut" Direction="Output" Wire="w90" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="1 0.5" Bounds="213 79 18 18" />
                     <ConfigurableCaseStructure.Case Id="D80" Bounds="10 4 211 169" Pattern="True">

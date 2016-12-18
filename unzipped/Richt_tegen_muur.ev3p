@@ -184,7 +184,7 @@
                     <Terminal Id="SequenceOut" Direction="Output" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="1 0.5" Bounds="0 0 0 0" />
                 </PairedConfigurableMethodCall>
                 <Wire Id="w28" Joints="N(n23:Vooruit) v(268) h(254) N(n34:Boolean)" />
-                <Wire Id="w30" Joints="N(b28:n31) v(49) h(565) N(n8:Power) B(0) v(50) h(433) N(n6:Power)" />
+                <Wire Id="w30" Joints="N(b28:n31) v(50) h(433) N(n6:Power) B(0) v(49) h(565) N(n8:Power)" />
                 <Wire Id="w32" Joints="N(n31:SequenceOut) N(n29:SequenceIn)" />
                 <ConfigurableMethodCall Id="n29" Bounds="1383 71 101 91" Target="X3\.Lib:GlobalGetSingle">
                     <ConfigurableMethodTerminal>
@@ -215,8 +215,8 @@
                 </ConfigurableMethodCall>
                 <Wire Id="w35" Joints="N(n32:SequenceOut) N(n6:SequenceIn)" />
                 <Wire Id="w36" Joints="N(n29:valueOut) v(22) h(101) N(n32:motorpoorten)" />
-                <Wire Id="w37" Joints="N(n32:links) v(22) h(132) N(n6:MotorPort) B(0) v(38) h(497) N(n11:MotorPort) B(0) v(70) h(761) N(n28:MotorPort)" />
-                <Wire Id="w38" Joints="N(n32:rechts) v(30) h(233) N(n8:MotorPort) B(0) v(46) h(598) N(n12:MotorPort) B(0) v(86) h(831) N(n30:MotorPort)" />
+                <Wire Id="w37" Joints="N(n32:links) v(70) h(761) N(n28:MotorPort) B(0) v(38) h(497) N(n11:MotorPort) B(0) v(22) h(132) N(n6:MotorPort)" />
+                <Wire Id="w38" Joints="N(n32:rechts) v(86) h(831) N(n30:MotorPort) B(0) v(46) h(598) N(n12:MotorPort) B(0) v(30) h(233) N(n8:MotorPort)" />
                 <ConfigurableMethodCall Id="n43" Bounds="1130 -109 159 91" Target="CommentBlock\.vix" Comment="Zet robot recht tegen een muur door even ...">
                     <Terminal Id="SequenceIn" Direction="Input" Wire="w43" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="0 0.5" Bounds="0 33 18 18" />
                     <Terminal Id="SequenceOut" Direction="Output" Wire="w45" DataType="NationalInstruments:SourceModel:DataTypes:X3SequenceWireDataType" Hotspot="1 0.5" Bounds="141 33 18 18" />
